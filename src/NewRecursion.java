@@ -36,13 +36,7 @@ public class NewRecursion {
         }
         else{
             if(arrB[indexB] > arrC[k-1]){
-//                if(indexA >= arrA.length && indexB >=  arrB.length){
-//                    return;
-//                }
                 arrC = add(arrC.length, arrC, arrB[indexB]);
-//                if(indexA >= arrA.length && indexB >=  arrC[indexB]){
-//                    return;
-//                }
                 System.out.println(Arrays.toString(arrC));
                 if((indexB >= arrB.length-1)){
                     if((indexB >= arrB.length-1) && (indexA == 1)){
@@ -110,6 +104,15 @@ public class NewRecursion {
 //    }
 
 
+    //WRAPPER METHOD
+    public void arraySort(int[] A, int[] B){
+        int[] C = {};
+        boolean flag = true;
+        int indexA = 0;
+        int indexB = 0;
+
+        arraySortUtil(A, B, C, flag, indexA, indexB);
+    }
 
 
 
